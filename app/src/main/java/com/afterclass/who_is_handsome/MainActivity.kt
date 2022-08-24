@@ -3,12 +3,11 @@ package com.afterclass.who_is_handsome
 import android.app.job.JobInfo
 import android.app.job.JobScheduler
 import android.content.ComponentName
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import androidx.annotation.RequiresApi
+
 
 
 class MainActivity : AppCompatActivity() {
