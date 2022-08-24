@@ -10,8 +10,6 @@ import android.widget.Toast
 class ToastJobService:JobService() {
     companion object{
         val TAG="ToastJobService"
-        var jobCancelled = false
-
     }
     override fun onStartJob(params: JobParameters?): Boolean {
         Log.d(TAG,"Job Started!")
@@ -21,7 +19,6 @@ class ToastJobService:JobService() {
 
     override fun onStopJob(params: JobParameters?): Boolean {
         Log.d(TAG,"Job cancelled before completion!")
-        jobCancelled=true
         return true
     }
     fun doBackgroundWork(params: JobParameters?){
